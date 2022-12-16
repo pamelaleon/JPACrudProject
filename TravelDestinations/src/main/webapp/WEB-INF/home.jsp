@@ -10,6 +10,7 @@
 <body>
 <h1>Welcome to Top Travel Destinations</h1>
 <h4>We have created a database of all the best places in the world that might be your next travel adventure!</h4>
+ ${countryList}
 
 </body>
 </html>

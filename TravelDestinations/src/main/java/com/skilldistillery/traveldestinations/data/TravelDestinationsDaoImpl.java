@@ -30,4 +30,22 @@ public class TravelDestinationsDaoImpl implements TravelDestinationsDAO {
 		return em.createQuery(jpql, Country.class).getResultList();
 	}
 
+	@Override
+	public Country create(Country name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Country update(int id, Country name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean delete(int id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }

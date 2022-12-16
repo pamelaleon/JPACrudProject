@@ -8,8 +8,11 @@ import com.skilldistillery.traveldestinations.entities.Country;
 
 public interface TravelDestinationsDAO {
 	
-	Country findById(int id);
-	List<Country> findAll();
+	public Country findById(int id);
+	public List<Country> findAll();
+	public Country create(Country name);
+	public Country update(int id, Country name);
+	public boolean delete(int id);
 	
 	
 		
