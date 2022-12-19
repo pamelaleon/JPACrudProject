@@ -16,8 +16,15 @@ public class TravelDestinationsController {
 	
 	@RequestMapping(path= {"/", "home.do"} )
 	public String goToHome(Model model) {
-		model.addAttribute("countryList", dao.findAll());
+	//	model.addAttribute("countryList", dao.findAll()); 
 		return "home";
 	}
-
+	
+	@RequestMapping(path= "searchName.do")
+	public String searchName(String name, Model model) {
+		//	model.addAttribute("countryList", dao.findAll()); 
+		model.addAttribute("name", dao.findByName(name));
+		return "searchName";
+	}
+	
 }

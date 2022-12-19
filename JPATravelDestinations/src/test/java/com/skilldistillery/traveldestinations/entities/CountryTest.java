@@ -42,12 +42,15 @@ class CountryTest {
 	}
 
 	@Test
-	void test() {
+	void inital_mapping_test_to_see_if_database_has_connected_successfully() {
 		assertNotNull(country);
 		assertEquals("Peru", country.getName());
 		assertEquals(1, country.getId());
+		assertEquals("Spanish", country.getPrimaryLanguage());
+		
 		
 
 	}
+	
 
 }

@@ -7,7 +7,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Table;
 
 @Entity
 public class Country {
@@ -32,8 +31,8 @@ public class Country {
 	
 	@Override
 	public String toString() {
-		return "Country [id=" + id + ", name=" + name + ", continentLocation=" + continentLocation + ", description="
-				+ description + ", primaryLanguage=" + primaryLanguage + "]";
+		return "Country ID: " + id + ", Name: " + name + ", Continent Location: " + continentLocation + ", Description: "
+				+ description + ", Primary Language: " + primaryLanguage;
 	}
 
 

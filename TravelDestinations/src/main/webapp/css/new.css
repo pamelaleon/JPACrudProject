@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+#someId {
+	background-image:
+		url('https://www.goway.com/media/cache/dc/f1/dcf1a366d11dcdbbc2ca60d20b2fe7be.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	image-rendering: auto;
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+	
+}
+
+
+.title {
+	text-align: center;
+	font-family: uni-rounded;
+	font-size: 400%;
+}
+
+.title2 {
+	text-align: center;
+	font-family: uni-rounded;
+}
+
+
+#NavBar{
+    
+	font-size: 18px;
+    font-weight: bold;
+}
+
+    
