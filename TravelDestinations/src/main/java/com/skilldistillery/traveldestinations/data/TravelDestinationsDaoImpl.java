@@ -1,6 +1,6 @@
 package com.skilldistillery.traveldestinations.data;
 
-import java.com.skilldistillery.traveldestinations.entities.Country;
+package java.com.skilldistillery.traveldestinations.entities;
 import java.util.List;
 
 import javax.persistence.EntityManager;

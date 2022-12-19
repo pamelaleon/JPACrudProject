@@ -16,6 +16,18 @@
 	<h4 class=title2>We have created a database of all the best places
 		in the world that might be your next travel adventure!</h4>
 
+<br>
+	<!-- <form action="searchId.do" method="GET" id=serachId>
+	  Search Country By ID: <input type="text" name="id" /> <input type="submit"
+			value="Show Country" />
+	</form>
+
+	<form action="searchName.do" method="GET" id=searchName>
+		Search Country By Name: <input type="text" name="country" /> <input type="submit"
+			value="Show Country" />
+	</form>
+ -->
+
 
 </body>
 </html>

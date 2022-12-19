@@ -20,12 +20,12 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="searchName.jsp">Find By Name</a>
-        <a class="nav-link" href="#">Find By Id</a>
-        <a class="nav-link" href="#">Find All</a>
-        <a class="nav-link" href="#">Create Country</a>
-        <a class="nav-link" href="#">Update Country</a>
-        <a class="nav-link" href="#">Delete Country</a>
+        <a class="nav-link active" aria-current="page" href="searchName.do">Find By Name</a>
+        <a class="nav-link" href="searchId.do">Find By Id</a>
+        <a class="nav-link" href="findall.do">Find All</a>
+        <a class="nav-link" href="create.do">Create Country</a>
+        <a class="nav-link" href="update.do">Update Country</a>
+        <a class="nav-link" href="delete.do">Delete Country</a>
         <a class="nav-link disabled">Coming Soon</a>
       </div>
     </div>

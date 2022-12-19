@@ -6,6 +6,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Search Country Name</title>
+<%@ include file="bootstrap.jsp"%>
+<link href="css/new.css" rel="stylesheet">
 </head>
 <body>
 

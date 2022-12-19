@@ -25,9 +25,23 @@
 
 
 #NavBar{
-    
+    text-align: center;
 	font-size: 18px;
     font-weight: bold;
 }
 
+
+/* #searchId{
+	font-family: uni-rounded;
+	text-align: center;
+	font-size: 18px;
+    font-weight: bold;
+}
+
+#searchName{
+	font-family: uni-rounded;
+	font-size: 18px;
+    font-weight: bold;
+	
+} */
     
