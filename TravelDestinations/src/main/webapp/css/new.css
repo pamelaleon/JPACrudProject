@@ -45,9 +45,26 @@
 
 #searchResult {
 	background-color: DodgerBlue; 
+	
 }
 
 #pFont{
 	font-size: 50px;
+}
+
+#display {
+	font-size: 25px;
+	font-family: uni-rounded;
+	font-weight: bold;
+	text-align: center;
+	
+}
+
+#countryname{
+	font-size: 25px;
+	font-family: uni-rounded;
+	font-weight: bold;
+	text-align: center;
+	
 }
     
