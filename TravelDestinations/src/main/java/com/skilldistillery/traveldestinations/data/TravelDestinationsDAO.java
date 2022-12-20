@@ -1,7 +1,8 @@
 package com.skilldistillery.traveldestinations.data;
 
-import java.com.skilldistillery.traveldestinations.entities.Country;
 import java.util.List;
+
+import com.skilldistillery.traveldestinations.entities.Country;
 
 public interface TravelDestinationsDAO {
 	

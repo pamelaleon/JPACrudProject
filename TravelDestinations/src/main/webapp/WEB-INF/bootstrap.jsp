@@ -12,9 +12,9 @@
 </head>
 <body>
 
-<nav id=NavBar class="navbar navbar-expand-lg bg-blue">
+<nav id=NavBar class="navbar navbar-expand-lg bg">
   <div class="container-fluid">
-    <a class="navbar-brand" href="home.jsp">Home</a>
+    <a class="navbar-brand" href="home.do">Home</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -31,6 +31,10 @@
     </div>
   </div>
 </nav>
+
+<h1 id=title>Welcome to Top Travel Destinations</h1>
+<h4 id=title2>We have created a database of all the best places
+		in the world that might be your next travel adventure!</h4>
 
 
 </body>

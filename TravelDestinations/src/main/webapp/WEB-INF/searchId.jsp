@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,18 +10,10 @@
 <link href="css/new.css" rel="stylesheet">
 </head>
 <body>
-<form action="searchId.do" method="POST">
+<form action="searchTheId.do" method="POST">
   Country ID: <input type="text" name="id" />
   <input type="submit" value="Show Country" />
 </form>
-
-<div>
-  <h2>$country.name}</h2>
-  <p>${country.continentLocation}</p>
-  <p>${country.primaryLanguage}</p>
-  <p>${country.description}</p>
-
-</div>
 
 </body>
 </html>

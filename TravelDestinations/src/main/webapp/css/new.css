@@ -1,41 +1,35 @@
 @charset "UTF-8";
 
-#someId {
-	background-image:
-		url('https://www.goway.com/media/cache/dc/f1/dcf1a366d11dcdbbc2ca60d20b2fe7be.jpg');
-	background-repeat: no-repeat;
-	background-size: 100%;
-	image-rendering: auto;
-	image-rendering: crisp-edges;
-	image-rendering: pixelated;
-	
-}
-
-
-.title {
+#title {
 	text-align: center;
 	font-family: uni-rounded;
 	font-size: 400%;
+	background-color: DodgerBlue; 
 }
 
-.title2 {
+#title2 {
 	text-align: center;
 	font-family: uni-rounded;
+	background-color: DodgerBlue; 
 }
 
 
 #NavBar{
     text-align: center;
-	font-size: 18px;
+	font-size: 20px;
     font-weight: bold;
+    background-color: DodgerBlue; 
+    
+    
 }
 
 
-/* #searchId{
+#searchId{
 	font-family: uni-rounded;
 	text-align: center;
 	font-size: 18px;
     font-weight: bold;
+    
 }
 
 #searchName{
@@ -43,5 +37,17 @@
 	font-size: 18px;
     font-weight: bold;
 	
-} */
+}
+
+#big{
+	font-size: 100px;
+}
+
+#searchResult {
+	background-color: blue; 
+}
+
+#pFont{
+	font-size: 50px;
+}
     

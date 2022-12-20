@@ -1,6 +1,5 @@
 package com.skilldistillery.traveldestinations.data;
 
-package java.com.skilldistillery.traveldestinations.entities;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -8,6 +7,8 @@ import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Service;
+
+import com.skilldistillery.traveldestinations.entities.Country;
 
 @Service
 @Transactional
@@ -57,8 +58,8 @@ public class TravelDestinationsDaoImpl implements TravelDestinationsDAO {
 
 	@Override
 	public List<Country> findByName(String name) {
-		String query = "SELECT name FROM country  WHERE name LIKE :nameC";
-		List<Country> country = em.createQuery(query).setParameter("nameC", "%" + name + "%").getResultList();
+		String query = "SELECT c FROM Country c WHERE name LIKE :nameC";
+		List<Country> country = em.createQuery(query, Country.class).setParameter("nameC", "%" + name + "%").getResultList();
 		return country;
 	}
 

@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,10 +11,12 @@
 </head>
 <body>
 
-<form action="searchByName.do" method="GET">
-  Country Name: <input type="text" name="name" />
-  <input type="submit" value="Show Country" />
-</form>
+	<c:forEach var="co" items="${country}">
+	<tr>
+		<td>${co.id}</td>
+		<td><a href="searchTheId.do?id=${co.id}">${co.name}</a></td>
+	</tr>
+</c:forEach>
 
 </body>
 </html>
