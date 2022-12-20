@@ -10,7 +10,7 @@ public interface TravelDestinationsDAO {
 	public List<Country> findAll();
 	public Country create(Country Country);
 	public Country update(int id, Country country);
-	public boolean delete(Country country);
+	public boolean delete(int id);
 	public List<Country>findByName(String name);
 		
 	}

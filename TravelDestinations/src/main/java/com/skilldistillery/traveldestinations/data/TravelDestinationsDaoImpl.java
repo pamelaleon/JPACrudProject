@@ -47,19 +47,19 @@ public class TravelDestinationsDaoImpl implements TravelDestinationsDAO {
 	}
 
 	@Override
-	public boolean delete(Country country) {
+	public boolean delete(int id) {
 		boolean countryWasDeleted = false;
-		if (em.find(Country.class, country.getId()) != null) {
-			em.remove(country);
-			countryWasDeleted = true;
-		}
+		Country country = em.find(Country.class, id);
+		em.remove(country);
+		countryWasDeleted = true;
 		return countryWasDeleted;
 	}
 
 	@Override
 	public List<Country> findByName(String name) {
 		String query = "SELECT c FROM Country c WHERE name LIKE :nameC";
-		List<Country> country = em.createQuery(query, Country.class).setParameter("nameC", "%" + name + "%").getResultList();
+		List<Country> country = em.createQuery(query, Country.class).setParameter("nameC", "%" + name + "%")
+				.getResultList();
 		return country;
 	}
 

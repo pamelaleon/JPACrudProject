@@ -9,6 +9,6 @@
 <link href="css/new.css" rel="stylesheet">
 </head>
 <body>
-
+	<h1>Country has been deleted.</h1>
 </body>
 </html>

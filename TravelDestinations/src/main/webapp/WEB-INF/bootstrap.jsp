@@ -24,18 +24,10 @@
         <a class="nav-link" href="searchId.do">Find By Id</a>
         <a class="nav-link" href="findall.do">Find All</a>
         <a class="nav-link" href="create.do">Create Country</a>
-        <a class="nav-link" href="update.do">Update Country</a>
-        <a class="nav-link" href="delete.do">Delete Country</a>
-        <a class="nav-link disabled">Coming Soon</a>
       </div>
     </div>
   </div>
 </nav>
-
-<h1 id=title>Welcome to Top Travel Destinations</h1>
-<h4 id=title2>We have created a database of all the best places
-		in the world that might be your next travel adventure!</h4>
-
 
 </body>
 </html>

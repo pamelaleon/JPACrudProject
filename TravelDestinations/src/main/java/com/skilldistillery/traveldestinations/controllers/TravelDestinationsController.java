@@ -21,7 +21,7 @@ public class TravelDestinationsController {
 	}
 	
 	@RequestMapping(path= "searchName.do")
-	public String searchName(String name, Model model) {
+	public String searchName(Model model) {
 		return "searchName";
 	}
 	@RequestMapping(path= "searchByName.do")
@@ -40,18 +40,28 @@ public class TravelDestinationsController {
 		return "searchIdResult";
 	}
 	@RequestMapping(path= "create.do")
-	public String create(Country country, Model model) {
-		model.addAttribute("create", dao.create(country));
+	public String create(Model model) {
 		return "create";
 	}
+	@RequestMapping(path= "createCountry.do")
+	public String createCountry(Country country, Model model) {
+		model.addAttribute("country", dao.create(country));
+		return "searchIdResult";
+	}
 	@RequestMapping(path= "update.do")
-	public String update(Model model) {
-		model.addAttribute("update", dao.update(0, null));
+	public String update(int id, Model model) {
+		Country c = dao.findById(id);
+		model.addAttribute("country", c);
 		return "update";
 	}
+	@RequestMapping(path= "updateCountry.do")
+	public String updateCountry(int id, Country country, Model model) {
+		model.addAttribute("country", dao.update(id, country));
+		return "searchIdResult";
+	}
 	@RequestMapping(path= "delete.do")
-	public String delete(Country country, Model model) {
-		model.addAttribute("delete", dao.delete(country));
+	public String delete(int id, Model model) {
+		model.addAttribute("country", dao.delete(id));
 		return "delete";
 	}
 	@RequestMapping(path= "findall.do")

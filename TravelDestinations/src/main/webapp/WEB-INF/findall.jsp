@@ -10,7 +10,7 @@
 </head>
 <body>
 <c:choose>
- 	 	<c:when test="${empty country}">
+ 	 	<c:when test="${empty countryList}">
  	 	 	<h2>No Countries Found</h2>
  	 	</c:when>
  	 	<c:otherwise>
@@ -23,10 +23,10 @@
  	 	 	 	</tr>
  	 	 	</thead>
  	 	 	 	<tbody>
- 	 	 	 	 	<c:forEach var="countryList" items="${country}">
+ 	 	 	 	 	<c:forEach var="c" items="${countryList}">
    	 	 	 	 	 	 <tr>
-    		 	 	  	 	<td>${country.id}</td>
-    	 	 	 	 	 	<td><a href="findall.do?country=${film.id}">${country.name} (${country.continentLocation})</a></td>
+    		 	 	  	 	<td>${c.id}</td>
+    	 	 	 	 	 	<td><a href="searchTheId.do?id=${c.id}">${c.name} (${c.continentLocation})</a></td>
    	 	 	 	 	 	 </tr>
  	 	 	 	 	</c:forEach>
  	 	 	 	</tbody>
